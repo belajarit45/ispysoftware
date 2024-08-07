@@ -152,8 +152,8 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 	sed -i "s|YOUR_USERNAME|$name|" AgentDVR.service
 	sudo chmod 644 ./AgentDVR.service
 	
-	sudo systemctl stop AgentDVR.service
-  	sudo systemctl disable AgentDVR.service
+	sudo service AgentDVR.service stop
+  	sudo service AgentDVR.service disable
 	if [ -f /etc/systemd/system/AgentDVR.service ]; then
   		sudo rm /etc/systemd/system/AgentDVR.service
 	fi
@@ -161,9 +161,9 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 	sudo chown $name -R $ABSOLUTE_PATH/AgentDVR
 	sudo cp AgentDVR.service /etc/systemd/system/AgentDVR.service
 
-	sudo systemctl daemon-reload
-	sudo systemctl enable AgentDVR.service
-	sudo systemctl start AgentDVR
+	sudo service daemon-reload
+	sudo service AgentDVR.service enable
+	sudo service AgentDVR start
 
 	echo "Started service"
 	echo "Go to http://localhost:8090 to configure"
