@@ -5,7 +5,7 @@
 
 if [[ ("$OSTYPE" == "darwin"*) ]]; then
   # If darwin (macOS)
-  bash <(curl -H 'Cache-Control: no-cache, no-store' -s "https://raw.githubusercontent.com/ispysoftware/agent-install-scripts/main/v2/osx_setup2.sh")
+  bash <(curl -H 'Cache-Control: no-cache, no-store' -s "https://raw.githubusercontent.com/belajarit45/ispysoftware/main/v2/osx_setup2.sh")
   exit
 fi
 
