@@ -9,11 +9,11 @@ if [[ ("$OSTYPE" == "darwin"*) ]]; then
     sudo rm -f /Library/LaunchDaemons/com.ispy.agent.dvr.plist
   fi
 else
-  sudo systemctl stop AgentDVR.service
-  sudo systemctl disable AgentDVR.service
+  sudo service AgentDVR.service stop
+  sudo service AgentDVR.service disable
   sudo rm /etc/systemd/system/AgentDVR.service
-  sudo systemctl daemon-reload
-  sudo systemctl reset-failed
+  sudo service daemon-reload
+  sudo service reset-failed
 fi
 
 echo "stopped and removed service"
