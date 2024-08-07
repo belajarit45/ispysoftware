@@ -20,7 +20,7 @@ machine_has() {
 }
 
 # Stop it if it's running
-sudo service stop AgentDVR.service
+sudo service AgentDVR.service stop
 
 ABSOLUTE_PATH="${PWD}"
 mkdir AgentDVR
