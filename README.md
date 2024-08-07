@@ -7,7 +7,7 @@ https://www.ispyconnect.com/download.aspx
 
 You may need to install curl first:
 
-    sudo apt-get install curl
+    sudo apt-get install curl -y
 
 To install on **OSX** (Requires: OSX >= 10.14) or **Linux** (x64, arm and raspberry pi) open a terminal and call:
 
