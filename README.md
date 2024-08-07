@@ -11,7 +11,7 @@ You may need to install curl first:
 
 To install on **OSX** (Requires: OSX >= 10.14) or **Linux** (x64, arm and raspberry pi) open a terminal and call:
 
-    bash <(curl -s "https://raw.githubusercontent.com/ispysoftware/agent-install-scripts/main/v2/install.sh")
+    bash <(curl -s "https://raw.githubusercontent.com/belajarit45/ispysoftware/main/v2/install.sh")
 
 # Updating Agent
 
